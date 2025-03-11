@@ -1,0 +1,78 @@
+/* Dropdown button style */
+.custom-dropdown-button .dropdown-toggle {
+    background: linear-gradient(90deg,  #7f00ff, #e100ff) !important;
+    color: white !important;
+    font-weight: bold !important;
+    padding: 10px 20px !important;
+    width: 200px !important;
+    border-radius: 50px !important;
+    border: none !important;
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+    margin-top: 0px;
+}
+
+/* To prevent shadow from Bootstrap */
+.custom-dropdown-button .dropdown-toggle:focus,
+.custom-dropdown-button .dropdown-toggle:active {
+    box-shadow: none !important;
+    outline: none !important;
+}
+
+/* Dropdown menu items */
+.custom-dropdown-item {
+    background: linear-gradient(90deg, #6894fb,#34eaf0) !important;
+    color: white !important;
+    padding: 10px !important;
+    border-radius: 50px !important;
+    margin: 5px 0 !important;
+    border: none !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: flex-start !important;
+}
+
+/* Hover effect */
+.custom-dropdown-item:hover {
+    background: linear-gradient(90deg, #7f00ff, #e100ff) !important;
+}
+
+/* Ensure the dropdown menu itself has rounded edges */
+/* Blurred background for dropdown menu */
+.dropdown-menu {
+    border-radius: 25px !important;
+    padding: 10px !important;
+    width: 200px !important;
+    background-color: rgba(255, 255, 255, 0.2) !important; /* Slight transparency */
+    backdrop-filter: blur(100px); /* Apply blur */
+    -webkit-backdrop-filter: blur(10px); /* For Safari support */
+    border: none !important;
+}
+
+/* Custom styles for the search bar */
+.custom-search-bar {
+    background-color: white;
+    padding: 10px 15px; /* Keep the padding */
+    font-size: 16px;
+}
+
+/* Focus and hover effects */
+.custom-search-bar:focus {
+    border-color: #e100ff !important; /* Change border color on focus */
+    box-shadow: 0 0 10px rgba(225, 0, 255, 0.8), 0 0 20px rgba(225, 0, 255, 0.4); /* Add a stronger glow effect */
+    outline: none; /* Remove default outline */
+    background-color: #f3f3f3; /* Light background color on focus */
+}
+
+/* Smooth transition for focus effects */
+.custom-search-bar {
+    transition: border-color 0.4s ease, box-shadow 0.4s ease, background-color 0.4s ease;
+}
+
+/* Hover effect */
+.custom-search-bar:hover {
+    border-color: #e100ff; /* Change border color on hover */
+    box-shadow: 0 0 20px rgba(225, 0, 255, 0.753); /* Add a stronger shadow */
+    background-color: #f7f7f7; /* Change background color on hover */
+}
